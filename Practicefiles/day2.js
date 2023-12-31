@@ -152,3 +152,175 @@ Math.sin(60);
 
 Math.cos(0);
 Math.cos(60);
+
+// Random Numbers Generator ::
+// lets create random number between 0 to 10;
+let random_number = Math.random();
+let zero_ten = random_number * 11;
+console.log(zero_ten); // This gives min 0 and max 10.99;
+console.log(Math.floor(zero_ten)); // This gives between 0 and 10;
+
+// Strings:
+
+let space = " "; // empty strings;
+let firsName = "Nitin";
+let lasName = "Dharmesh";
+let countrry = "Inida";
+let city = "Ahemdabad";
+let language = "English, JavaScript, python";
+let job = "Developer";
+let quote = "Just don't care about other peoples ";
+
+// String Concatenation;
+// connecting two or more string together its called the concatenation
+
+let FullName = firsName + space + lasName;
+console.log(FullName); //Nitin dharmesh
+
+let nat = firsName + space + "i am a  " + job + "  In " + city;
+console.log(nat);
+
+// Escape Sequences in Strings
+
+// In JavaScript and other programming languages \ followed by some characters is an escape sequence. Let's see the most common escape characters:
+
+//     \n: new line
+//     \t: Tab, means 8 spaces
+//     \\: Back slash
+//     \': Single quote (')
+//     \": Double quote ("
+
+// String Methods :
+// Everything in javaScript is an object . A String is a primitive data type we can not modify once it created, The string object has many string methods they are help us to work with string;
+
+// 1. Length: The string length method return the number of character in string including space ;
+// example
+let jss = "JavaSCript ";
+console.log(jss.length); /// 11;
+let FirstName = "Nitindharmesh";
+console.log(FirstName.length); //13
+
+// 2. Accessing characters in a string:::
+// We can access the each character in string using the index .
+// Example
+let string = "JavaScript";
+let Fristletter = string[0];
+console.log(Fristletter); // J;
+
+let last = string.length - 1;
+console.log(string[last]); // last character of a string ;
+
+// 3. toUpperCase(): This method changes the string to Uppercase letters;
+let time = "Its time to sleep";
+console.log(time.toUpperCase()); // ITS TIME TO SLEEP;
+
+//4. toLowerCase().: This is gonna change the string into the lower case ;
+
+console.log(time.toLowerCase); // its time to sleep "lower case here ";
+
+//5.substr(); it takes to arguments , the starting index, and the number of character to slice ;
+let new_st = "Vinland";
+console.log(new_st.substr(1, 4));
+console.log(new_st.substr(2, 5));
+
+//6. Substring(): it takes two arguments, The string index and the stopping index but it doesn't include the character at the stopping index;
+
+console.log(new_st.substring(0, 4)); //Vinl;
+
+//7.Split(): Split method splits a string at a specified place ;
+
+let tim = "30 Days Of JavaScript";
+
+console.log(string.split()); // Changes to an array -> ["30 Days Of JavaScript"]
+console.log(string.split(" ")); // Split to an array at space -> ["30", "Days", "Of", "JavaScript"]
+
+let firstName = "Asabeneh";
+
+console.log(firstName.split()); // Change to an array - > ["Asabeneh"]
+console.log(firstName.split("")); // Split to an array at each letter ->  ["A", "s", "a", "b", "e", "n", "e", "h"]
+
+let countries = "Finland, Sweden, Norway, Denmark, and Iceland";
+
+console.log(countries.split(",")); // split to any array at comma -> ["Finland", " Sweden", " Norway", " Denmark", " and Iceland"]
+console.log(countries.split(", ")); //  ["Finland", "Sweden", "Norway", "Denmark", "and Iceland"]
+
+// 8. trim(): remove trailing space in the beginning or at the end of a st ring ;
+
+var st = "   30 Days Of JavaScript   ";
+
+console.log(st);
+console.log(st.trim(" "));
+
+var fir = " Asabeneh ";
+
+console.log(fir);
+console.log(fir.trim()); // still removes spaces at the beginning and the end of the string
+
+//9. includes(): It takes a substring argument and it checks if substring argument exists in the string. includes() returns a boolean. If a substring exist in a string, it returns true, otherwise it returns false.
+
+let strin = "30 Days Of JavaScript";
+
+console.log(strin.includes("Days")); // true
+console.log(strin.includes("days")); // false - it is case sensitive!
+console.log(strin.includes("Script")); // true
+console.log(strin.includes("script")); // false
+console.log(strin.includes("java")); // false
+console.log(strin.includes("Java")); // true
+
+let country = "Finland";
+
+console.log(country.includes("fin")); // false
+console.log(country.includes("Fin")); // true
+console.log(country.includes("land")); // true
+console.log(country.includes("Land")); // false
+
+//    10. replace(): takes as a parameter the old substring and a new substring.
+
+// string.replace(oldsubstring, newsubstring)
+
+// let string = '30 Days Of JavaScript'
+// console.log(string.replace('JavaScript', 'Python')) // 30 Days Of Python
+
+// let country = 'Finland'
+// console.log(country.replace('Fin', 'Noman'))       // Nomanland
+
+//   11.  charAt(): Takes index and it returns the value at that index
+
+// string.charAt(index)
+
+// let string = '30 Days Of JavaScript'
+// console.log(string.charAt(0))        // 3
+
+// let lastIndex = string.length - 1
+// console.log(string.charAt(lastIndex)) // t
+
+// 12. charCodeAt(): Takes index and it returns char code (ASCII number) of the value at that index
+// let string = '30 Days Of JavaScript'
+// console.log(string.charCodeAt(3))        // D ASCII number is 68
+
+// let lastIndex = string.length - 1
+// console.log(string.charCodeAt(lastIndex)) // t ASCII is 116
+
+// Changing Data type (Casting):
+// casting : convert one data type to another data type :
+
+// String to int:
+// We can convert the string number to number  with this method :
+// 1. parseInt();
+//2.Number();
+//3.Plus sing(+);
+
+let dim = "10";
+let numINT = Number(dim);
+console.log(numINT); // 10 number ;
+
+let numPar = parseInt(dim);
+console.log(numPar); // 10
+
+let numplus = +dim;
+console.log(numplus); /// 10
+
+// String to float;
+// 1.parsefloat()
+//2. Number()
+//3.plus sign(+);
