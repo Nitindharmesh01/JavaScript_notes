@@ -94,8 +94,8 @@ console.log(right_now.getDay());
 
 // 4 . get radius using prompt and calculate the area of a circle (area = pi * r**2) and the circumference of a circle (C = 2 * pi * r);
 
-let radius = parseInt(prompt("Enter the radius of the circle :   "));
-let area = Math.PI * radius ** 2;
-let circumference = 2 * Math.PI * radius;
-alert(`The area of the circle is ${area}`);
-alert(`The circumference of the circle is ${circumference}`);
+// let radius = parseInt(prompt("Enter the radius of the circle :   "));
+// let area = Math.PI * radius ** 2;
+// let circumference = 2 * Math.PI * radius;
+// alert(`The area of the circle is ${area}`);
+// alert(`The circumference of the circle is ${circumference}`);
